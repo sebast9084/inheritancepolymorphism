@@ -6,7 +6,9 @@ int main(){
 	employee->calculateBonus();
 	manager->calculateBonus();
 	developer->calculateBonus();
-
-	employee* = &manager;
+	Employee* emp = new Manager; 
+	emp->calculateBonus();
+	emp = &dev;
+	emp->calculateBonus();
 	return 0;
 }
