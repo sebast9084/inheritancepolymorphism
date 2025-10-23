@@ -8,8 +8,7 @@ int main(){
 	developer->calculateBonus();
 	Employee* emp = new Manager; 
 	emp->calculateBonus();
-	Developer* dev = new Developer;
-	emp = dev;
+	emp = developer;
 	emp->calculateBonus();
 	return 0;
 }
