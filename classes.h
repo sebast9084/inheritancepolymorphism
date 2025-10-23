@@ -5,7 +5,6 @@ using namespace std;
 class Employee{
 public:
 	Employee(){
-		//cout << "Employee object created!" << endl;
 		name = "Employee";
 	}
 	void showInfo();
@@ -20,9 +19,7 @@ protected:
 };
 class Manager: public Employee{
 public:
-	Manager(double percent){
-		p = percent;
-		//cout << "Manager object created!" << endl;
+	Manager(){
 		name = "Manager";
 	}
 	void calculateBonus(){
@@ -31,13 +28,11 @@ public:
 		cout << bonus << endl;
 	}
 private:
-	double p;
+	double p = 20;
 };
 class Developer: public Employee{
 public:
-	Developer(double percent){
-		p = percent;
-		//cout << "Manager object created!" << endl;
+	Developer(){
 		name = "Developer";
 	}
 	void calculateBonus(){
@@ -46,5 +41,5 @@ public:
 		cout << bonus << endl;
 	}
 private:
-	double p;
+	double p = 10;
 };
